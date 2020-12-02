@@ -1,0 +1,138 @@
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Dancing Script', cursive;
+}
+
+.calcBoard {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calcBoard__content {
+	width: 400px;
+	height: 620px;
+	padding: 25px;
+	border-radius: 30px;
+	box-shadow: 0px 0px 15px #888888;
+	position: relative;
+	overflow: hidden;
+}
+
+.colorLayer_0 {
+	height: 500px;
+	width: 500px;
+	background: linear-gradient(-45deg, #fdc094, #5e72eb);
+	border-radius: 50%;
+	position: absolute;
+	top: -250px;
+	right: -150px;
+}
+
+.colorLayer_1 {
+	height: 600px;
+	width: 600px;
+	background: linear-gradient(-45deg, #ff9190, #5e72eb);
+	border-radius: 50%;
+	position: absolute;
+	top: -330px;
+	right: -35px;
+	box-shadow: 0px 0px 10px #888888;
+}
+
+.colorLayer_2 {
+	height: 530px;
+	width: 530px;
+	background: linear-gradient(-165deg, #5e72eb, #120c6e, #ff9190);
+	border-radius: 50%;
+	position: absolute;
+	top: -320px;
+	right: -48px;
+	box-shadow: 0px 0px -6px #888888;
+}
+
+.text {
+	position: absolute;
+	width: 85%;
+	top: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+	padding: 20px;
+	opacity: 0.85;
+}
+
+#indicator {
+	display: block;
+	background: linear-gradient(25deg, #ff9190, #5e72eb);
+	border: 0;
+	border-radius: 10px;
+	color: white;
+	padding: 2px 12px;
+	width: 100%;
+	margin: 0 auto;
+	outline: none;
+	text-align: right;
+	font-size: 40px;
+}
+
+#indicator::placeholder {
+	color: white;
+}
+
+.btnContainer.zero {
+	flex: 0 0 50%;
+	max-width: 50%;
+	grid-column: 1 / span 2;
+}
+
+.calcBtn {
+	background: linear-gradient(-45deg, #ff9190, #5e72eb);
+	border: 0;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	color: white;
+	transition: all 0.3s;
+	box-shadow: 0.5px 0.5px 2px 1.5px #888888;
+	transition: all 0.3s ease;
+}
+
+.calcBtn:focus {
+	outline: none;
+}
+
+.calcBtn:active {
+	box-shadow: 0 0 0 0 #888888;
+	transform: translate(2px, 2px);
+}
+
+.calcBtn.zero {
+	width: 130px;
+	border-radius: 50px;
+}
+
+.calcBtn.scope {
+	background: linear-gradient(25deg, #ff9190, #5e72eb);
+	border: 0;
+	height: 50px;
+	width: 50px;
+	border-radius: 5px;
+	color: white;
+	box-shadow: 0.5px 0.5px 2px 1.5px #888888;
+	position: absolute;
+	top: 105px;
+	right: -5px;
+}
+
+.btnArray {
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	height: 230px;
+}
